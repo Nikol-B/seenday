@@ -1,0 +1,174 @@
+main {
+  display: flex;
+  padding: 15px;
+  margin: 15px;
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+}
+
+.blocks {
+  display: flex;
+  grid-gap: 15px;
+  width: 100%;
+
+}
+
+//левая полоска заливка карточки 1=зеленый, 2=красный
+.color_success {
+  border-left: 10px solid var(--color_success);
+}
+
+.color_danger {
+  border-left: 10px solid var(--color_danger);
+}
+
+.left-block {
+  width: 35%;
+  font-size: 14px;
+}
+
+//фиолетовое окно 
+.notice {
+  width: 65%;
+  font-size: 14px;
+  background-color: rgb(193, 159, 234, 0.7);
+  color: #8948d9;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-around;
+}
+
+
+.block {
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.dowlandBlockTop {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  background-color: #eceff3;
+
+}
+
+.idItem {
+  background-color: #52518a;
+  color: white;
+  text-align: center;
+  width: 54px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttonX {
+  width: 54px;
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+.buttonClose {
+  display: none;
+}
+
+
+
+.itemEvent {
+  text-align: start;
+  width: 100%;
+  padding: 10px;
+}
+
+.blockdowork {
+  border-left: none !important;
+}
+
+.link {
+  color: blue;
+   text-decoration: underline;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.span-link {
+  color: grey;
+  /* Цвет ссылки */
+  text-decoration: underline grey dashed;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+}
+
+
+.dowlandLinkBlock {
+  position: sticky;
+  top: 0;
+  width: 65%;
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .blocks {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .notice {
+    display: none;
+  }
+
+  .dowlandLinkBlock {
+
+    width: 100%;
+  }
+
+  .left-block {
+    width: 100%;
+  }
+
+  .right-block {
+    width: 100%;
+    border-left: none;
+  }
+
+  .block h2 {
+    font-size: 18px;
+  }
+
+  .right-block .block h2 {
+    font-size: 20px;
+  }
+
+  .buttonX {
+    display: none;
+  }
+
+  .divButtonClose {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+
+  .buttonClose {
+    display: block;
+    background-color: red;
+    border: none;
+    color: white;
+    height: 30px;
+  }
+
+}
